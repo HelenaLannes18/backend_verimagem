@@ -8,7 +8,7 @@ import examRouter from './routes/examRoutes.js';
 import uploadRouter from './routes/uploadRoutes.js';
 import userRouter from './routes/userRoutes.js';
 import planoRouter from './routes/planoRoutes.js';
-import cors from 'cors';
+// import cors from 'cors';
 
 dotenv.config();
 
@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
   res.send('Express on Vercel');
 });
 
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+// app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 app.use('/api/upload', uploadRouter);
 app.use('/api/seed', seedRouter);
 app.use('/api/products', productRouter);
