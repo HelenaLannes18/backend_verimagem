@@ -1,13 +1,12 @@
-import express from 'express';
-import data from './data.js';
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
-import seedRouter from './routes/seedRoutes.js';
-import productRouter from './routes/productRoutes.js';
-import examRouter from './routes/examRoutes.js';
-import uploadRouter from './routes/uploadRoutes.js';
-import userRouter from './routes/userRoutes.js';
-import planoRouter from './routes/planoRoutes.js';
+const express = require('express');
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+// import seedRouter from './routes/seedRoutes.js';
+// import productRouter from './routes/productRoutes.js';
+// import examRouter from './routes/examRoutes.js';
+// import uploadRouter from './routes/uploadRoutes.js';
+// import userRouter from './routes/userRoutes.js';
+// import planoRouter from './routes/planoRoutes.js';
 // import cors from 'cors';
 
 dotenv.config();
@@ -31,12 +30,12 @@ app.get('/', (req, res) => {
 });
 
 // app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
-app.use('/api/upload', uploadRouter);
-app.use('/api/seed', seedRouter);
-app.use('/api/products', productRouter);
-app.use('/api/users', userRouter);
-app.use('/api/exams', examRouter);
-app.use('/api/planos', planoRouter);
+// app.use('/api/upload', uploadRouter);
+// app.use('/api/seed', seedRouter);
+// app.use('/api/products', productRouter);
+// app.use('/api/users', userRouter);
+// app.use('/api/exams', examRouter);
+// app.use('/api/planos', planoRouter);
 
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
@@ -48,4 +47,4 @@ app.listen(port, () => {
 });
 
 // Export the Express API
-// module.exports = app;
+module.exports = app;
