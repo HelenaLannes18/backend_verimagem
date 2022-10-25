@@ -20,9 +20,7 @@ const data = {
       //_id: '1',
       name: 'Ultrassonografia 3D/4D',
       slug: 'ultrassonografia-3d4d',
-      isFeatured: true,
       image: '/ultrassonografia.png',
-      featuredImage: '/images/banner2.jpg',
       recomendacao1:
         'não ingerir nenhum comprimido contendo cálcio durante 24 horas antes do exame;',
       recomendacao2:
@@ -36,9 +34,7 @@ const data = {
       //_id: '2',
       name: 'Ressonância Magnética',
       slug: 'ressonancia_magnetica',
-      isFeatured: true,
       image: '/ressonancia.png',
-      featuredImage: '/images/banner2.jpg',
       recomendacao1:
         'não ingerir nenhum comprimido contendo cálcio durante 24 horas antes do exame;',
       recomendacao2:
@@ -52,8 +48,6 @@ const data = {
       //_id: '3',
       name: 'Raio-X',
       slug: 'raio_x',
-      isFeatured: true,
-      featuredImage: '/images/banner2.jpg',
       image: '/raiox.png',
       recomendacao1:
         'não ingerir nenhum comprimido contendo cálcio durante 24 horas antes do exame;',
